@@ -1,0 +1,4 @@
+1) Dependencies:
+    - NodeJS
+    - Ganache (Personal Ethereum blockchain)
+    -Truffle 
