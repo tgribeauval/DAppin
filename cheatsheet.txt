@@ -1,4 +1,59 @@
+Steps to build project:
+
 1) Dependencies:
     - NodeJS
     - Ganache (Personal Ethereum blockchain)
-    -Truffle 
+    - Truffle
+    - Metamask
+    - Identicon Library (Icons for Ethereum Adress)**
+
+2) DappUniversity Starter-Kit:
+
+Truffle-config.js: main entry point for application, specify connection to the blockchain, specify smart contracts directory
+eth_swap: project folder
+migrations: deploys smart contracts
+src/index.js: renders components
+src/contracts: smart contracts
+src/components: react components (client side)
+package.json: project dependencies
+
+3) Create new migrations file (2_deploy_contracts.js)
+
+
+Important Commands:
+
+-npm run start (start server)
+
+Truffle commands:
+truffle compile: Compile Smart Contracts
+truffle migrate: Migrate Smart Contracts (Put them on blockchain)
+truffle migrate --reset: "Remigrate" Existing Smart Contracts 
+truffle console: Console to interact with contracts
+
+Tips:
+a.Constructor is a function that executes only once the smart contract is deployed
+b.Adding public in front of variable creates a "getter" function that allows you to read the value.
+c. contacts can be variable types
+  ex: DappToken public dappToken (contract adress)
+
+
+
+Solidity Types:
+
+Enums (like a status):
+Ex: enum State { Waiting, Ready, Active }
+
+Structs (date structures):
+Ex: struct Person {
+  string _firstName;
+  string _lastName;
+}
+
+Array of Structs:
+Person[] public people;
+
+Ex(add person struct to people array)
+
+function addPerson(string memory _name, .... _lastName) public {
+  people.push(Person(_firstName, _lastName));
+}

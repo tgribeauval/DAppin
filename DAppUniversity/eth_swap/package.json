@@ -1,5 +1,5 @@
 {
-  "name": "eth-marketplace",
+  "name": "eth-swap",
   "version": "0.1.0",
   "description": "An instant ERC-20 Cryptocurrency Exchange",
   "author": "thierry.gribeauval@gmail.com",
@@ -19,7 +19,6 @@
     "react-bootstrap": "1.0.0-beta.5",
     "react-dom": "16.8.4",
     "react-scripts": "2.1.3",
-    "truffle": "5.0.5",
     "web3": "1.0.0-beta.55"
   },
   "scripts": {
