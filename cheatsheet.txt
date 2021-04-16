@@ -27,8 +27,8 @@ Important Commands:
 Truffle commands:
 truffle compile: Compile Smart Contracts
 truffle migrate: Migrate Smart Contracts (Put them on blockchain)
-truffle migrate --reset: "Remigrate" Existing Smart Contracts 
-truffle console: Console to interact with contracts
+truffle migrate --reset: "Remigrate" Existing Smart Contract
+truffle test (run tests)
 
 Tips:
 a.Constructor is a function that executes only once the smart contract is deployed
@@ -36,7 +36,16 @@ b.Adding public in front of variable creates a "getter" function that allows you
 c. contacts can be variable types
   ex: DappToken public dappToken (contract adress)
 
+Chai Cheat Sheet:
 
+ex:
+describe('Facebook', async () => {
+  let facebook = await facebook_token.new()
+  it('has a founder named: ', async () => {
+    const name = await facebook.founder()
+    assert.equal(name, 'Mark Zuckerberg')
+  })
+})
 
 Solidity Types:
 
