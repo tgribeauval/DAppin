@@ -35,6 +35,8 @@ a.Constructor is a function that executes only once the smart contract is deploy
 b.Adding public in front of variable creates a "getter" function that allows you to read the value.
 c. contacts can be variable types
   ex: DappToken public dappToken (contract adress)
+d. msg.sender is address of person calling the function or deploying contract
+e. address(this) is address of current contract
 
 Chai Cheat Sheet:
 
@@ -52,7 +54,7 @@ Solidity Types:
 Enums (like a status):
 Ex: enum State { Waiting, Ready, Active }
 
-Structs (date structures):
+Structs (data structures):
 Ex: struct Person {
   string _firstName;
   string _lastName;
@@ -66,3 +68,10 @@ Ex(add person struct to people array)
 function addPerson(string memory _name, .... _lastName) public {
   people.push(Person(_firstName, _lastName));
 }
+
+Mappings:
+
+Key value pair, ex:
+mapping(address => uint) public stakingBalance;
+stakingBalance[msg.sender] = stakingBalance[msg.sender] + _amount;
+(stakingBalance[msg.sender] returns a uint)
