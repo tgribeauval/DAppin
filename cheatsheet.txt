@@ -37,7 +37,7 @@ c. contacts can be variable types
   ex: DappToken public dappToken (contract adress)
 d. msg.sender is address of person calling the function or deploying contract
 e. address(this) is address of current contract
-
+f. require(arg1, string). arg1 must evaluate to true.
 Chai Cheat Sheet:
 
 ex:
