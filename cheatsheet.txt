@@ -29,6 +29,7 @@ truffle compile: Compile Smart Contracts
 truffle migrate: Migrate Smart Contracts (Put them on blockchain)
 truffle migrate --reset: "Remigrate" Existing Smart Contract
 truffle test (run tests)
+truffle exec (filename)
 
 Tips:
 a.Constructor is a function that executes only once the smart contract is deployed
