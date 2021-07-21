@@ -34,11 +34,12 @@ truffle exec (filename)
 Tips:
 a.Constructor is a function that executes only once the smart contract is deployed
 b.Adding public in front of variable creates a "getter" function that allows you to read the value.
-c. contacts can be variable types
+c. contacts can be variable types (inherent contract methods)
   ex: DappToken public dappToken (contract adress)
 d. msg.sender is address of person calling the function or deploying contract
 e. address(this) is address of current contract
 f. require(arg1, string). arg1 must evaluate to true.
+
 Chai Cheat Sheet:
 
 ex:
