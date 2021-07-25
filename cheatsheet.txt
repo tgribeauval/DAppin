@@ -39,6 +39,7 @@ c. contacts can be variable types (inherent contract methods)
 d. msg.sender is address of person calling the function or deploying contract
 e. address(this) is address of current contract
 f. require(arg1, string). arg1 must evaluate to true.
+g. if bytes(string) = 0 (No value)
 
 Chai Cheat Sheet:
 
